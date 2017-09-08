@@ -80,6 +80,6 @@ npm run build
 ## Author
 David Tran [@davidtranwd](https://twitter.com/davidtranwd)
 
-##License
+## License
 
 Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard/blob/master/LICENSE.md)
