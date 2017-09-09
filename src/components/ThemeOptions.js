@@ -52,7 +52,7 @@ class ThemeOptions extends Component {
         <div className={cx("dropdown show-dropdown", {
           open: isShowingDropdown
         })}>
-          <a href="#" data-toggle="dropdown" aria-expanded="false" onClick={e => {
+          <a data-toggle="dropdown" aria-expanded="false" onClick={e => {
             e.stopPropagation();
             this.toggleDropdown();
           }}>

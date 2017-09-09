@@ -1,36 +1,51 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { toggleMobileNavVisibility } from '../../reducers/Layout';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
-const Header = () => (
+const Header = ({
+  showMobileMenu,
+  toggleMobileNavVisibility
+}) => (
   <Navbar fluid={true}>
     <Navbar.Header>
-      <Navbar.Brand>
-        <a href="#">Dashboard</a>
-      </Navbar.Brand>
+      <button type="button" className="navbar-toggle" data-toggle="collapse" onClick={toggleMobileNavVisibility}>
+        <span className="sr-only">Toggle navigation</span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+      </button>
+      <a href="#" className="navbar-brand">Dashboard</a>
     </Navbar.Header>
-    <Nav>
-      <NavItem><i className="fa fa-dashboard"></i></NavItem>
-      <NavDropdown title={<i className="fa fa-globe" />} id="basic-nav-dropdown">
-        <MenuItem>Action</MenuItem>
-        <MenuItem>Another action</MenuItem>
-        <MenuItem>Something else here</MenuItem>
-        <MenuItem divider/>
-        <MenuItem>Separated link</MenuItem>
-      </NavDropdown>
-      <NavItem><i className="fa fa-search"></i></NavItem>
-    </Nav>
-    <Nav pullRight>
-      <NavItem>Account</NavItem>
-      <NavDropdown title="Dropdown" id="right-nav-bar">
-        <MenuItem>Action</MenuItem>
-        <MenuItem>Another action</MenuItem>
-        <MenuItem>Something else here</MenuItem>
-        <MenuItem divider/>
-        <MenuItem>Separated link</MenuItem>
-      </NavDropdown>
-      <NavItem>Log out</NavItem>
-    </Nav>
+    <Navbar.Collapse>
+      <Nav>
+        <NavItem><i className="fa fa-dashboard"></i></NavItem>
+        <NavDropdown title={<i className="fa fa-globe" />} id="basic-nav-dropdown">
+          <MenuItem>Action</MenuItem>
+          <MenuItem>Another action</MenuItem>
+          <MenuItem>Something else here</MenuItem>
+          <MenuItem divider/>
+          <MenuItem>Separated link</MenuItem>
+        </NavDropdown>
+        <NavItem><i className="fa fa-search"></i></NavItem>
+      </Nav>
+      <Nav pullRight>
+        <NavItem>Account</NavItem>
+        <NavDropdown title="Dropdown" id="right-nav-bar">
+          <MenuItem>Action</MenuItem>
+          <MenuItem>Another action</MenuItem>
+          <MenuItem>Something else here</MenuItem>
+          <MenuItem divider/>
+          <MenuItem>Separated link</MenuItem>
+        </NavDropdown>
+        <NavItem>Log out</NavItem>
+      </Nav>
+    </Navbar.Collapse>
   </Navbar>
 );
 
-export default Header;
+const mapDispatchToProp = dispatch => ({
+  toggleMobileNavVisibility: () => dispatch(toggleMobileNavVisibility())
+});
+
+export default connect(null, mapDispatchToProp)(Header);

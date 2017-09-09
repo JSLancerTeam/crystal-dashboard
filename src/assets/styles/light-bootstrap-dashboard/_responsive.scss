@@ -54,7 +54,7 @@
         }
     }
 
-    body > .navbar-collapse.collapse{
+    .mobile-nav.navbar-collapse.collapse{
         display: none !important;
     }
 
@@ -114,7 +114,7 @@
         display: block;
     }
 
-    body > .navbar-collapse {
+    .mobile-nav.navbar-collapse {
         position: fixed;
         display: block;
         top: 0;
@@ -162,6 +162,7 @@
     }
     .nav-open .navbar-collapse{
         @include transform-translate-x(0px);
+        width: calc(100% - 155px);
     }
     .nav-open .navbar .container{
         left: -250px;
