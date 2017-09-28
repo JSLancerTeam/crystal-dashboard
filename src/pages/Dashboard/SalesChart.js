@@ -44,18 +44,24 @@ const SalesChart = () => (
       <p className="category">24 Hours performance</p>
     </div>
     <div className="content">
-      <ChartistGraph data={dataSales} options={optionsSales} type="Line" className="ct-chart" />
-      <div className="footer">
-        <div className="legend">
+      <ChartistGraph data={dataSales} options={optionsSales} responsiveOptions={responsiveSales} type="Line" className="ct-chart" />
+    </div>
+    <div className="footer">
+      <div className="legend">
+        <div className="item">
           <i className="fa fa-circle text-info"></i> Open
-            <i className="fa fa-circle text-danger"></i> Click
-            <i className="fa fa-circle text-warning"></i> Click Second Time
-          </div>
-        <hr />
-        <div className="stats">
-          <i className="fa fa-history"></i> Updated 3 minutes ago
-          </div>
+        </div>
+        <div className="item">
+          <i className="fa fa-circle text-danger"></i> Click
+        </div>
+        <div className="item">
+          <i className="fa fa-circle text-warning"></i> Click Second Time
+        </div>
       </div>
+      <hr />
+      <div className="stats">
+        <i className="fa fa-history"></i> Updated 3 minutes ago
+          </div>
     </div>
   </div>
 );

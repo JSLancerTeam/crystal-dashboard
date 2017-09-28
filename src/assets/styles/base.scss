@@ -1,7 +1,11 @@
 $pe-7s-font-path: "../../node_modules/pe7-icon/dist/fonts" !default;
+@import 'base/variables';
 @import "~pe7-icon/dist/scss/pe-icon-7-stroke";
-@import './light-bootstrap-dashboard.scss';
-@import './icons.scss';
-.wrapper {
-  overflow-x: hidden;
-}
+@import 'base/chartist';
+@import "~chartist/dist/scss/chartist.scss";
+@import 'base/sidebar';
+@import 'base/navbar';
+@import 'base/card';
+@import 'base/todos';
+@import 'base/checkbox-radio-switch';
+@import 'base/footer';
