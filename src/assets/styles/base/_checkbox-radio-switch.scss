@@ -1,0 +1,88 @@
+.form-horizontal {
+  .checkbox, .radio {
+    padding-top: 0;
+  }
+
+  .checkbox-group, .radio-group {
+    margin-top: 10px;
+  }
+}
+
+
+.checkbox,
+.radio {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333333;
+  .table,
+  .todo-item & {
+    position: relative;
+    height: 17px;
+    display: block;
+    width: 17px;
+    padding: 0px 0px;
+    margin: 0px 5px;
+    text-align: center;
+  }
+  &.checked .icons {
+    color: #23CCEF;
+  }
+  .icons {
+    color: #DDDDDD;
+    display: block;
+    height: 17px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 17px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+  &.checked .first-icon {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .first-icon,
+  .second-icon {
+    display: inline-table;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    margin: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  &:hover .second-icon {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .icons .second-icon {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  &.checked .second-icon {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #23CCEF;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+  &.disabled {
+    color: gray;
+  }
+  input {
+    outline: none !important;
+    opacity: 0;
+    margin-left: -9999px;
+    position: absolute;
+  }
+}

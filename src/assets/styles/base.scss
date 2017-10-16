@@ -1,5 +1,8 @@
 $pe-7s-font-path: "../../node_modules/pe7-icon/dist/fonts" !default;
+@import 'base/new_variables';
 @import 'base/variables';
+@import 'base/mixins';
+
 @import "~pe7-icon/dist/scss/pe-icon-7-stroke";
 @import 'base/chartist';
 @import "~chartist/dist/scss/chartist.scss";
@@ -9,3 +12,18 @@ $pe-7s-font-path: "../../node_modules/pe7-icon/dist/fonts" !default;
 @import 'base/todos';
 @import 'base/checkbox-radio-switch';
 @import 'base/footer';
+@import 'base/buttons';
+@import 'base/pagination';
+@import 'base/social-buttons';
+@import 'base/icons';
+@import 'base/panels';
+@import 'base/typography';
+@import 'base/form';
+
+html, body {
+  font-size: 14px;
+}
+
+.places-buttons .btn {
+  margin-bottom: 30px;
+}
