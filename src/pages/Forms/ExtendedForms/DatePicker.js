@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { SingleDatePicker, DateRangePicker } from 'react-dates';
 import moment from 'moment';
-import 'react-dates/lib/css/_datepicker.css';
 
 export default class DatePicker extends Component {
   state = {

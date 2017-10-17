@@ -3,6 +3,14 @@
   border-radius: $card-border-radius;
   margin-bottom: 30px;
   background: white;
+
+  .title {
+    margin: 0;
+    color: $card-title-color;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
   .header {
     padding: 15px 30px 0px;
     font-weight: 600;

@@ -19,6 +19,8 @@ $pe-7s-font-path: "../../node_modules/pe7-icon/dist/fonts" !default;
 @import 'base/panels';
 @import 'base/typography';
 @import 'base/form';
+@import 'base/tags';
+@import 'react-dates/styles';
 
 html, body {
   font-size: 14px;

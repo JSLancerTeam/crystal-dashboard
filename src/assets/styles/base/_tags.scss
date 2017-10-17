@@ -1,0 +1,83 @@
+.tagsinput {
+  overflow-y: auto;
+  text-align: left;
+  transition: all 300ms linear;
+  border-color: $primary-bg;
+  color: $primary-bg;
+  .tag,
+  .tagsinput-remove-link {
+    border-color: $primary-bg;
+    color: $primary-bg;
+  }
+  .tag {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 8px 5px 0;
+    padding: 5px 15px;
+    border: 1px solid $primary-bg;
+    border-radius: 4px;
+    color: $primary-bg;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .tag:hover .tagsinput-remove-link {
+    opacity: 1;
+
+  }
+  .tagsinput-remove-link {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 0;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding-right: 5px;
+    transition: all 0.2s ease-in;
+  }
+
+  .tagsinput-add-container {
+    display: inline-block;
+    vertical-align: middle;
+    .tagsinput-add {
+      color: $primary-bg;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      padding: 5px 6px;
+      margin: 5px 0 0;
+      vertical-align: top;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+    }
+    input {
+      background: transparent;
+      border: none;
+      color: #333333;
+      margin: 0;
+      outline: medium none !important;
+      padding: 0 0 0 5px;
+      vertical-align: top;
+      width: 30px;
+      height: 35px;
+    }
+  }
+  .tag-fill {
+    .tag {
+      border-color: $primary-bg;
+      color: #FFFFFF;
+      background-color: $primary-bg;
+    }
+    .tagsinput-remove-link {
+      color: white;
+    }
+  }
+}
