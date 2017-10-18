@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import cx from 'classnames';
 
 class UserInfo extends Component {
 
@@ -23,7 +24,9 @@ class UserInfo extends Component {
           </div>
           <span
             onClick={() => this.setState({ isShowingUserMenu: !this.state.isShowingUserMenu })}
-            className="pe-7s-angle-down collapse-arrow"></span>
+            className={cx("pe-7s-angle-down collapse-arrow", {
+              active: isShowingUserMenu
+            })}></span>
         </div>
         <Collapse in={isShowingUserMenu}>
           <ul className="nav user-nav">

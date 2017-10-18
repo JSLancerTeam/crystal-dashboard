@@ -26,7 +26,7 @@ const optionsPreferences = {
 const PublicPreference = () => (
   <div className="card">
     <div className="header">
-      <h4 className="title">Public Preferences</h4>
+      <h4>Public Preferences</h4>
       <p className="category">Pie Chart</p>
     </div>
     <div className="content">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
-import uncheckImage from 'assets/images/checkbox-uncheck.svg';
-import checkImage from 'assets/images/checkbox-check.svg';
+import uncheckImage from 'assets/images/radio-1.svg';
+import checkImage from 'assets/images/radio-2.svg';
 
 class Radio extends Component {
 

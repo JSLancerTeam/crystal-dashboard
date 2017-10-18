@@ -30,9 +30,9 @@ const ValidationForm = ({
     <div className="row">
       <div className="col-md-12">
         <div className="card">
+          <div className="header"><h4>Validation</h4></div>
           <form className="form-horizontal" onSubmit={handleSubmit(onSubmit)}>
             <div className="content">
-              <legend>Validation</legend>
               <div className="form-group">
                 <label className="col-sm-3 control-label">Required text</label>
                 <div className="col-sm-9">

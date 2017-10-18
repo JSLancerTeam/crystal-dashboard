@@ -7,7 +7,7 @@ let GoogleMap = () => (
     <div className="col-md-12">
       <div className="card">
         <div className="header">
-          <p className="category">Google Map</p>
+          <h4>Google Map</h4>
         </div>
         <div className="content">
           <div style={{ width: '100%', height: '500px', boxSizing: 'border-box' }}>

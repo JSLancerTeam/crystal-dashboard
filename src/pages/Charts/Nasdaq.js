@@ -30,7 +30,7 @@ const optionsStock = {
 const Nasdaq = () => (
   <div className="card">
     <div className="header">
-      <h4 className="title">NASDAQ: AAPL</h4>
+      <h4>NASDAQ: AAPL</h4>
       <p className="category">Line Chart with Points</p>
     </div>
     <div className="content">

@@ -105,10 +105,15 @@ a {
       }
       .collapse-arrow {
         font-size: 30px;
+        transition: all 0.3s ease;
+      }
+      .collapse-arrow.active {
+        transform: rotate(180deg);
       }
     }
     .user-nav > li > a {
       padding-left: 90px;
+      color: white;
     }
   }
 
@@ -126,6 +131,10 @@ a {
           color: black;
           background: white;
         }
+      }
+
+      &.active .caret {
+        transform: rotate(180deg);
       }
 
       > div > ul.nav {
@@ -169,6 +178,7 @@ a {
 
       .caret {
         margin-left: 10px;
+        transition: all 0.2s ease;
       }
     }
   }

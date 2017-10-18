@@ -44,7 +44,7 @@ class VectorMap extends Component {
         style={{width: '100%', height: '100%', 'box-sizing': 'border-box'}}
         ref={container => this.container = container}>
         <div className="header">
-          <p className="category">Vector Map</p>
+          <h4>Vector Map</h4>
         </div>
         <div className="content">
           <ReactMapGL
@@ -55,6 +55,5 @@ class VectorMap extends Component {
     )
   }
 }
-
 
 export default VectorMap;
