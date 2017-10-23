@@ -17,7 +17,7 @@
       text-decoration: none;
       background: white;
       border: $border-thin solid $border-color;
-      border-radius: 50%;
+      border-radius: 38px;
     }
 
     > a,
@@ -27,7 +27,7 @@
     &:last-child > a,
     &:last-child > span {
       margin: 0 2px;
-      border-radius: 50%;
+      border-radius: 38px;
     }
 
     &.active > a,
@@ -53,7 +53,7 @@
   }
 }
 
-.pagination { @include paginationStyle($default-bg, $default-color); }
+.pagination { @include paginationStyle($primary-bg, $primary-color); }
 .pagination-primary { @include paginationStyle($primary-bg, $primary-color); }
 .pagination-success { @include paginationStyle($success-bg, $success-color); }
 .pagination-info { @include paginationStyle($info-bg, $info-color); }

@@ -114,6 +114,14 @@ a {
     .user-nav > li > a {
       padding-left: 90px;
       color: white;
+      &:hover, &:active {
+        color: black;
+        background: white;
+      }
+      &:focus{
+        color: white;
+        background: transparent;
+      }
     }
   }
 

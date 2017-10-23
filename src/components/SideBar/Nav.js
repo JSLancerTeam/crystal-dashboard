@@ -90,7 +90,7 @@ class Nav extends Component {
                   <Link to="/tables/extended-tables">Extended Tables</Link>
                 </li>
                 <li className={this.isPathActive('/tables/fixed-data-table') ? 'active' : null}>
-                  <Link to="/tables/fixed-data-table">Fixed Data Table</Link>
+                  <Link to="/tables/react-bootstrap-table">React Bootstrap Table</Link>
                 </li>
               </ul>
             </div>

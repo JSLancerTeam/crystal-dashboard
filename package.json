@@ -44,6 +44,7 @@
     "react-big-calendar": "^0.15.0",
     "react-bootstrap": "^0.31.2",
     "react-bootstrap-sweetalert": "^4.0.0",
+    "react-bootstrap-table": "^4.1.0",
     "react-chartist": "^0.13.0",
     "react-dates": "^12.6.0",
     "react-dev-utils": "^4.0.1",
