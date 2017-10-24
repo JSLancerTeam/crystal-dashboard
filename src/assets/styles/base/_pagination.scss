@@ -16,7 +16,7 @@
       color: $text-color;
       text-decoration: none;
       background: white;
-      border: $border-thin solid $border-color;
+      border: $border-thin solid $medium-dark-gray;
       border-radius: 38px;
     }
 
@@ -37,7 +37,6 @@
     &.active > a:focus,
     &.active > span:focus {
       background-color: $background-color;
-      border: 0;
       color: $white-color;
       padding: 7px 13px;
     }
