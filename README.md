@@ -4,9 +4,21 @@
 
 Crystal React Bootstrap Dashboard is a beautiful, multi-purpose admin dashboard which is with React, Redux & Bootstrap. It contains a lot of simple and easy to use React components. You can use this dashboard to build many kind of dashboard include health, employees, company dashboard.
 
-**[Live preview](https://jslancerteam.github.io/crystal-dashboard/#/)**
+This package includes:
+- Charts
+- Buttons
+- Notifications
+- Sweet Alert
+- Redux Form
+- AirBnB React Dates
+- Google Map
+- Uber Vector Map
+- React Bootstrap Table
+- React Big Calendar
 
-This project is based on [light-bootstrap-dashboard](https://github.com/creativetimofficial/light-bootstrap-dashboard)
+In order to keep our stylesheet easy to maintain and customize by everyone. Stylesheet is writen by SCSS.
+
+**[Live preview](https://jslancerteam.github.io/crystal-dashboard/#/)**
 
 ## Get started
 *Development*
@@ -26,33 +38,6 @@ npm run build
 ./src/
 ├── assets
 │   ├── images
-│   │   ├── checkbox-1.svg
-│   │   ├── checkbox-2.svg
-│   │   ├── checkbox-check.svg
-│   │   ├── checkbox-uncheck.svg
-│   │   ├── default-avatar.png
-│   │   ├── faces
-│   │   │   ├── face-0.jpg
-│   │   │   ├── face-1.jpg
-│   │   │   ├── face-2.jpg
-│   │   │   ├── face-3.jpg
-│   │   │   ├── face-4.jpg
-│   │   │   ├── face-5.jpg
-│   │   │   ├── face-6.jpg
-│   │   │   ├── face-7.jpg
-│   │   │   └── tim_vector.jpe
-│   │   ├── favicon.ico
-│   │   ├── loading-bubbles.svg
-│   │   ├── mask.png
-│   │   ├── new_logo.png
-│   │   ├── radio-1.svg
-│   │   ├── radio-2.svg
-│   │   ├── sidebar-1.jpg
-│   │   ├── sidebar-2.jpg
-│   │   ├── sidebar-3.jpg
-│   │   ├── sidebar-4.jpg
-│   │   ├── sidebar-5.jpg
-│   │   └── tim_80x80.png
 │   └── styles
 │       ├── base  
 │       ├── base.scss
@@ -172,5 +157,4 @@ npm run build
 David Tran [@davidtranwd](https://twitter.com/davidtranwd)
 
 ## License
-
-Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard/blob/master/LICENSE.md)
+Licensed under MIT
