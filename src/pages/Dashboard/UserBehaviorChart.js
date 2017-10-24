@@ -36,16 +36,21 @@ const UserBehaviorChart = () => (
     </div>
     <div className="content">
       <Chart data={data} options={options} responsiveOptions={responsiveOptions} type="Bar" className="ct-chart" />
-      <div className="footer">
-        <div className="legend">
+
+    </div>
+    <div className="footer">
+      <div className="legend">
+        <div className="item">
           <i className="fa fa-circle text-info"></i> Tesla Model S
-              <i className="fa fa-circle text-danger"></i> BMW 5 Series
-          </div>
-        <hr />
-        <div className="stats">
-          <i className="fa fa-check"></i> Data information certified
-          </div>
+        </div>
+        <div className="item">
+          <i className="fa fa-circle text-danger"></i> BMW 5 Series
+        </div>
       </div>
+      <hr />
+      <div className="stats">
+        <i className="fa fa-check"></i> Data information certified
+          </div>
     </div>
   </div>
 );

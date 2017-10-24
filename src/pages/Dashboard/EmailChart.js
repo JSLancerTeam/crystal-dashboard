@@ -44,17 +44,23 @@ const EmailStatistic = () => {
         <ChartistGraph data={dataPreferences} options={optionsPreferences} type={chartType} className={'ct-chart ct-perfect-fourth'} />
 
 
-        <div className="footer">
-          <div className="legend">
+      </div>
+      <div className="footer">
+        <div className="legend">
+          <div className="item">
             <i className="fa fa-circle text-info"></i> Open
+          </div>
+          <div className="item">
             <i className="fa fa-circle text-danger"></i> Bounce
+          </div>
+          <div className="item">
             <i className="fa fa-circle text-warning"></i> Unsubscribe
           </div>
-          <hr />
-          <div className="stats">
-            <i className="fa fa-clock-o"></i> Campaign sent 2 days ago
-          </div>
         </div>
+        <hr />
+        <div className="stats">
+          <i className="fa fa-clock-o"></i> Campaign sent 2 days ago
+          </div>
       </div>
     </div>
 

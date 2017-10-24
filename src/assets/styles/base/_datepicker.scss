@@ -1,0 +1,68 @@
+.DateRangePickerInput,
+.SingleDatePickerInput {
+  border-radius: 2px;
+
+  .DateInput__display-text {
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .DateInput {
+    box-sizing: border-box;
+    height: 33.2px;
+    background-color: #F5F9FC;
+    color: #565656;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 2px;
+
+    .DateInput__display-text--focused {
+      background: lighten($primary-bg, 0);
+      border-color: $primary-bg;
+      height: 100%;
+      border-radius: 0;
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+}
+
+.DateRangePicker__picker,
+.SingleDatePicker__picker {
+  .CalendarDay--selected-start, .CalendarDay--selected-end, .CalendarDay--selected {
+    background: $primary-bg;
+    border: 1px double $primary-bg;
+  }
+
+  .DayPickerKeyboardShortcuts__show--bottom-right {
+    border-right: 33px solid $primary-bg;
+  }
+}
+
+.DateRangePicker__picker {
+  .CalendarDay--selected-span {
+    background: lighten($primary-bg, 10);
+    border: 1px double darken($primary-bg, 3);
+  }
+
+  .CalendarDay--selected-span.CalendarDay--hovered, .CalendarDay--selected-span:active {
+    background: $primary-bg;
+    border: 1px double darken($primary-bg, 3);
+  }
+
+  .CalendarDay--hovered-span, .CalendarDay--after-hovered-start {
+    background: lighten($primary-bg, 10);
+    border: 1px double darken($primary-bg, 3);
+    color: white;
+  }
+
+  .CalendarDay--selected-start,
+  .CalendarDay--selected-end {
+    background: $primary-bg;
+    border: 1px double darken($primary-bg, 3);
+    color: white;
+  }
+}

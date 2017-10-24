@@ -1,0 +1,23 @@
+.all-icons {
+  .font-icon-detail {
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid $medium-dark-gray;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+
+  [class^="pe-"] {
+    font-size: 40px;
+  }
+
+  .font-icon-detail input {
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    border: 0;
+  }
+}
