@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
+import uncheckImage from 'assets/images/checkbox-uncheck.svg';
+import checkImage from 'assets/images/checkbox-check.svg';
 
 class Tasks extends Component {
   state = {
@@ -60,41 +62,36 @@ class Tasks extends Component {
           <p className="category">Backend development</p>
         </div>
         <div className="content">
-          <div className="table-responsive table-full-width">
-            <table className="table">
-              <tbody>
-                {this.state.todos.map(todo => (
-                  <tr key={todo.id}>
-                    <td>
-                      <label className={cx('checkbox', {
-                        'checked': todo.completed === true
-                      })}>
-                        <span className="icons">
-                          <span className="first-icon fa fa-square-o"></span>
-                          <span className="second-icon fa fa-check-square-o"></span>
-                        </span>
-                        <input type="checkbox" value="" data-toggle="checkbox" onClick={() => this.toggleComplete(todo.id)} />
-                      </label>
-                    </td>
-                    <td>{todo.content}</td>
-                    <td className="td-actions text-right">
-                      <button type="button" rel="tooltip" title="" className="btn btn-danger btn-simple btn-xs" data-original-title="Remove" onClick={() => this.deleteTodo(todo.id)}>
-                        <i className="fa fa-times"></i>
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-
-              </tbody>
-            </table>
-          </div>
-
-          <div className="footer">
-            <hr />
-            <div className="stats">
-              <i className="fa fa-history"></i> Updated 3 minutes ago
+          <form>
+          {this.state.todos.map(todo => (
+            <div className={cx("todo-item", {completed: todo.completed})} key={todo.id}>
+              <div className="todo-item-wrapper">
+              <label className={cx("checkbox", {
+                  checked: todo.completed
+                })}
+                >
+                  <span className="icons">
+                    <img className="first-icon" src={uncheckImage} width={17} />
+                    <img className="second-icon" src={checkImage} width={17} />
+                  </span>
+                  <input type="checkbox" data-toggle="checkbox" checked={todo.completed} onChange={() => this.toggleComplete(todo.id)} />
+                </label>
+                <div className="todo-content">{todo.content}</div>
+                <a onClick={() => this.deleteTodo(todo.id)}>
+                  &times;
+                </a>
               </div>
-          </div>
+            </div>
+          ))}
+          </form>
+
+
+        </div>
+        <div className="footer">
+          <hr />
+          <div className="stats">
+            <i className="fa fa-history"></i> Updated 3 minutes ago
+              </div>
         </div>
       </div>
     );

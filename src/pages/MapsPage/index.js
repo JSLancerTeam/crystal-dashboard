@@ -1,15 +1,14 @@
 import React from 'react';
-import Map from './Map';
+import { Route } from 'react-router-dom';
+import GoogleMap from './GoogleMap';
+import VectorMap from './VectorMap';
 
-const MapsPage = () => (
-  <div style={{width: '100%', height: '100%', boxSizing: 'border-box'}}>
-    <Map
-      containerElement={
-        <div style={{width: '100%', height: '100%'}}/>
-      }
-      mapElement={
-        <div style={{ height: `100%`, height: '100%' }} />
-      }/>
+const MapsPage = ({match}) => (
+  <div className="content">
+    <div className="container-fluid">
+      <Route path={`${match.url}/google-map`} component={GoogleMap} />
+      <Route path={`${match.url}/vector-map`} component={VectorMap} />
+    </div>
   </div>
 );
 
