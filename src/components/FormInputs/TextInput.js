@@ -21,7 +21,7 @@ const TextInput = ({
       placeholder={placeholder}
       disabled={disabled} />
 
-    { error &&
+    { touched && error &&
       <label className="error" htmlFor={input.name}>{error}</label>
     }
 
