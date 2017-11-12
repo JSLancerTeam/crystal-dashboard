@@ -209,3 +209,55 @@ a {
   overflow: auto;
   background-color: #FAFCFE;	box-shadow: 0 30px 130px 0 rgba(90,105,116,0.1);
 }
+
+@media (max-width: 992px) {
+  .sidebar, .bootstrap-navbar {
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: $sidebar-width;
+    right: 0;
+    left: auto;
+    z-index: 1032;
+    visibility: visible;
+    overflow-y: visible;
+    padding: 0;
+    transform: translateX($sidebar-width);
+  }
+  .main-panel, .wrapper-full-page {
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    left: 0;
+    width: 100%;
+    transform: translateX(0);
+  }
+  .nav-open {
+    .main-panel, .wrapper-full-page {
+      transform: translateX(-$sidebar-width);
+      left: 0;
+      overflow: hidden;
+    }
+    .sidebar {
+      transform: translateX(0);
+    }
+    .close-layer {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.close-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: auto;
+  content: "";
+  z-index: 1000;
+  overflow-x: hidden;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+

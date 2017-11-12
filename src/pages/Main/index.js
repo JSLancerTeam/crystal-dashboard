@@ -37,6 +37,7 @@ const Main = ({
       'nav-open': mobileNavVisibility === true
     })}>
       <div className="wrapper">
+        <div className="close-layer" onClick={hideMobileMenu}></div>
         <SideBar />
 
         <div className="main-panel">
