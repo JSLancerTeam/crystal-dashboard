@@ -61,6 +61,7 @@
     "resolve-url-loader": "^2.1.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
+    "sweetalert": "1.0.0",
     "sweetalert-react": "^0.4.10",
     "url-loader": "0.5.9",
     "webpack": "3.5.1",
