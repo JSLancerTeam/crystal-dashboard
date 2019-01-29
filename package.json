@@ -69,13 +69,14 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "start": "NODE_PATH=./src node scripts/start.js",
-    "build": "NODE_PATH=./src node scripts/build.js",
-    "test": "NODE_PATH=./src node scripts/test.js --env=jsdom",
+    "start": "cross-env NODE_PATH=./src node scripts/start.js",
+    "build": "cross-env NODE_PATH=./src node scripts/build.js",
+    "test": "cross-env NODE_PATH=./src node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
